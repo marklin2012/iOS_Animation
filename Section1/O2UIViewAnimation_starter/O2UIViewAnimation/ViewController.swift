@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     let spinner = UIActivityIndicatorView(activityIndicatorStyle: .WhiteLarge)
     let status = UIImageView(image: UIImage(named: "banner"))
     let label = UILabel()
-    let message = ["Connectiong ...", "Authorizing ...", "Sending credentials ...", "Failed"]
+    let messages = ["Connectiong ...", "Authorizing ...", "Sending credentials ...", "Failed"]
     
     // MARK: - Lift cycle
     override func viewDidLoad() {
