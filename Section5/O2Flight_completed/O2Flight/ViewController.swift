@@ -81,6 +81,8 @@ class ViewController: UIViewController {
             
             cubeTransition(label: flightStatusLabel, text: data.flightStatus, direction: direction)
             
+            planeDepart()
+            
         } else {
             bgImageView.image = UIImage(named: data.weatherImageName)
             snowView.hidden = !data.showWeatherEffects
@@ -162,8 +164,33 @@ class ViewController: UIViewController {
         })
     }
     
-    
-    
+    func planeDepart() {
+        let originalCenter = planeImageView.center
+        
+        UIView.animateKeyframesWithDuration(1.5, delay: 0, options: [], animations: { () -> Void in
+            // add keyframe
+            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.25, animations: { () -> Void in
+                self.planeImageView.center.x += 80
+                self.planeImageView.center.y -= 10
+            })
+            
+            UIView.addKeyframeWithRelativeStartTime(0.1, relativeDuration: 0.4, animations: { () -> Void in
+                self.planeImageView.transform = CGAffineTransformMakeRotation(CGFloat(-M_PI_4/2))
+            })
+            
+            UIView.addKeyframeWithRelativeStartTime(0.25, relativeDuration: 0.25, animations: { () -> Void in
+                self.planeImageView.center.x += 100
+                self.planeImageView.center.y -= 50
+                self.planeImageView.alpha = 0
+            })
+            
+            UIView.addKeyframeWithRelativeStartTime(0.55, relativeDuration: 0.45, animations: { () -> Void in
+                self.planeImageView.alpha = 1
+                self.planeImageView.center = originalCenter
+            })
+            
+            }, completion: nil)
+    }
     
 
 
