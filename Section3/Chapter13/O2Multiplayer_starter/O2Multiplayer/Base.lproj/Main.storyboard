@@ -39,7 +39,7 @@
                             <view contentMode="scaleToFill" id="ueP-n8-cYC" customClass="AvatarView" customModule="O2Multiplayer" customModuleProvider="target">
                                 <rect key="frame" x="211" y="168" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="avatar-1"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="name" value="Me"/>
@@ -66,7 +66,7 @@
                             <view contentMode="scaleToFill" id="NGU-4b-xdS" customClass="AvatarView" customModule="O2Multiplayer" customModuleProvider="target">
                                 <rect key="frame" x="19" y="168" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="empty"/>
                                 </userDefinedRuntimeAttributes>
