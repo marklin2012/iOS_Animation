@@ -86,6 +86,7 @@
                         <outlet property="myAvatar" destination="ueP-n8-cYC" id="Bcx-WK-Ie8"/>
                         <outlet property="opponentAvatar" destination="NGU-4b-xdS" id="Xcg-9L-NDp"/>
                         <outlet property="searchAgain" destination="mc9-DW-1B0" id="0id-Fu-4NF"/>
+                        <outlet property="status" destination="n34-md-I87" id="efs-A7-sTU"/>
                         <outlet property="vs" destination="omU-W7-jGD" id="Nsb-OK-SJ8"/>
                     </connections>
                 </viewController>
