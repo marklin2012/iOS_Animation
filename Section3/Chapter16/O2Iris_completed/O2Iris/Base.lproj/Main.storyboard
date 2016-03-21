@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="O2Iris" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aG-O9-oWG">
+                                <rect key="frame" x="127" y="418" width="67" height="67"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="gNB-Z3-BT3"/>
+                                    <constraint firstAttribute="height" constant="67" id="rTd-GM-c2R"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" title="...">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="33"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionEndMonitoring:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qzf-Ny-191"/>
+                                    <action selector="actionEndMonitoring:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="tHL-RE-V69"/>
+                                    <action selector="actionStartMonitoring:" destination="BYZ-38-t0r" eventType="touchDown" id="zxr-Og-YQb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch to speak" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WP-lO-dWj">
+                                <rect key="frame" x="16" y="311" width="288" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="lyw-JT-Gkn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7WP-lO-dWj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZuQ-iL-fOT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7WP-lO-dWj" secondAttribute="trailing" id="dsF-cy-K12"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2aG-O9-oWG" secondAttribute="bottom" constant="83" id="nbB-6c-ga6"/>
+                            <constraint firstItem="2aG-O9-oWG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uYx-BP-lsp"/>
+                            <constraint firstItem="2aG-O9-oWG" firstAttribute="top" secondItem="7WP-lO-dWj" secondAttribute="bottom" constant="8" id="ueu-Jx-Uz6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="meterLabel" destination="7WP-lO-dWj" id="D5d-Bt-tpc"/>
+                        <outlet property="speakButton" destination="2aG-O9-oWG" id="Tty-B5-teN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="424"/>
+        </scene>
+    </scenes>
+</document>
